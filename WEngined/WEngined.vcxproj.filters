@@ -1,36 +1,100 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="WEngined">
+      <UniqueIdentifier>{B6C89F8D-A295-FA98-CBAE-E840B7DA2F27}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="WEngined\Events">
+      <UniqueIdentifier>{DACB5155-4657-BF19-4F68-420EBB721B1A}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="WEngined\ImGui">
+      <UniqueIdentifier>{606E45B5-4C3C-39BB-35D0-A9E1213D1520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WEngined\Platform">
+      <UniqueIdentifier>{CA31120D-3648-10A3-7FBF-9BC4EB14E12A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WEngined\Platform\OpenGL">
+      <UniqueIdentifier>{BEB3DF4C-AAD8-2ECD-D323-145DBFA72DEB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WEngined\Platform\Windows">
+      <UniqueIdentifier>{0406F240-70C8-25CB-B978-B457257AFEA8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\WEngined\Core.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="src\WEngined.h" />
     <ClInclude Include="src\WEngined\Application.h">
-      <Filter>Header Files</Filter>
+      <Filter>WEngined</Filter>
     </ClInclude>
-    <ClInclude Include="src\WEngined.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\WEngined\Core.h">
+      <Filter>WEngined</Filter>
     </ClInclude>
     <ClInclude Include="src\WEngined\EntryPoint.h">
-      <Filter>Header Files</Filter>
+      <Filter>WEngined</Filter>
     </ClInclude>
+    <ClInclude Include="src\WEngined\Events\ApplicationEvent.h">
+      <Filter>WEngined\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WEngined\Events\Event.h">
+      <Filter>WEngined\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WEngined\Events\KeyEvent.h">
+      <Filter>WEngined\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WEngined\Events\MouseEvent.h">
+      <Filter>WEngined\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WEngined\ImGui\ImGuiLayer.h">
+      <Filter>WEngined\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WEngined\KeyCodes.h">
+      <Filter>WEngined</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WEngined\Layer.h">
+      <Filter>WEngined</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WEngined\LayerStack.h">
+      <Filter>WEngined</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WEngined\Log.h">
+      <Filter>WEngined</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WEngined\MouseCodes.h">
+      <Filter>WEngined</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WEngined\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>WEngined\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WEngined\Platform\Windows\WindowsWindow.h">
+      <Filter>WEngined\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WEngined\Window.h">
+      <Filter>WEngined</Filter>
+    </ClInclude>
+    <ClInclude Include="src\wedpch.h" />
+    <ClInclude Include="src\WEngined\Platform\OpenGL\ImGuiOpenGLLoader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\WEngined\Application.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>WEngined</Filter>
     </ClCompile>
+    <ClCompile Include="src\WEngined\ImGui\ImGuiLayer.cpp">
+      <Filter>WEngined\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WEngined\Layer.cpp">
+      <Filter>WEngined</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WEngined\LayerStack.cpp">
+      <Filter>WEngined</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WEngined\Log.cpp">
+      <Filter>WEngined</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WEngined\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>WEngined\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WEngined\Platform\Windows\WindowsWindow.cpp">
+      <Filter>WEngined\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wedpch.cpp" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,9 @@
+[submodule "WEngined/vendor/spdlog"]
+	path = WEngined/vendor/spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "WEngined/vendor/GLFW"]
+	path = WEngined/vendor/GLFW
+	url = https://github.com/glfw/glfw
+[submodule "WEngined/vendor/imgui"]
+	path = WEngined/vendor/imgui
+	url = https://github.com/ocornut/imgui
